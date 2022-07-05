@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/otherDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/congratulation_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="45dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.samplecodeapp.widgets.TitleBoldTextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:padding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_13ssp"
+                        android:visibility="visible" />
+
+                    <com.samplecodeapp.widgets.TitleMediumTextView
+                        android:id="@+id/title_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:text=""
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_13ssp"
+                        android:visibility="gone" />
+
+                    <com.samplecodeapp.widgets.TitleMediumTextView
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center|top"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <com.samplecodeapp.widgets.TitleRegularTextView
+                        android:id="@+id/message_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:gravity="left|top"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+                    <LinearLayout
+                        android:id="@+id/ly_dialog_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/bottom_rounded_corners_no_background"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_no"
+                            style="@style/ButtonBlueWithWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_weight="0" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/read_btn"
+                            style="@style/ButtonBlueWithWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_weight="0"
+                            android:text="@string/btn_ok" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/dialogue_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/alert_favicon_icon"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/app_logo" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

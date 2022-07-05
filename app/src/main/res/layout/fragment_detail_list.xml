@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.samplecodeapp.widgets.TitleMediumTextView
+            android:id="@+id/text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/detail_background"
+            android:gravity="center"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shadow_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="8dp"
+                        android:weightSum="5">
+
+                        <com.samplecodeapp.widgets.TitleRegularTextView
+                            android:id="@+id/text_upvach"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center|left"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:text="वीरों का वर्णन:"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <com.samplecodeapp.widgets.TitleRegularTextView
+                            android:id="@+id/text_shalok_no"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center|end"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:text=""
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_11ssp" />
+
+                    </LinearLayout>
+
+                    <com.samplecodeapp.widgets.TitleMediumTextView
+                        android:id="@+id/text_shalok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="6dp"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/shadow_for_icons_background"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutLike"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/btnLike"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/like" />
+
+                            <com.samplecodeapp.widgets.TitleRegularTextView
+                                android:id="@+id/text_like"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:paddingTop="@dimen/_1sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="@string/like"
+                                android:textSize="@dimen/_11ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutRate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/btnRate"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/more" />
+
+                            <com.samplecodeapp.widgets.TitleRegularTextView
+                                android:id="@+id/text_rate"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:paddingTop="@dimen/_1sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="@string/rate"
+                                android:textSize="@dimen/_11ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutShare"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/btnShare"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/share" />
+
+                            <com.samplecodeapp.widgets.TitleRegularTextView
+                                android:id="@+id/text_share"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="@dimen/_1sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="@string/share"
+                                android:textSize="@dimen/_11ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutBookmark"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/btnBookmark"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/bookmark" />
+
+                            <com.samplecodeapp.widgets.TitleRegularTextView
+                                android:id="@+id/text_bookmark"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:paddingTop="@dimen/_1sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="@string/bookmark"
+                                android:textSize="@dimen/_11ssp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:layerType="software"
+                        android:src="@drawable/dotted" />
+
+                    <com.samplecodeapp.widgets.TitleRegularTextView
+                        android:id="@+id/text_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="6dp"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

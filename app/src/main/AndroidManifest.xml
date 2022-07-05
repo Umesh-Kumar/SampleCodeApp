@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.samplecodeapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".CodeApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SampleCodeApp"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".view.activity.SplashAct"
+            android:exported="true"
+            android:theme="@style/NoBarTheme"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.activity.ShalokActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStatusBar"
+            tools:ignore="LockedOrientationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.App"
+            tools:ignore="LockedOrientationActivity" />
+    </application>
+
+</manifest>

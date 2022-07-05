@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>mVersionCode</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>mMessage</key>
+        <value></value>
+    </entry>
+    <entry>
+        <key>mIsForceUpdate</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>mBhagwatGeetaVersion</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>mBhagwatGeetaJson</key>
+        <value>""</value>
+    </entry>
+</defaultsMap><!-- END xml_defaults -->

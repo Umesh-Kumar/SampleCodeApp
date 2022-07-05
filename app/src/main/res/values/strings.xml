@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">SampleCodeApp</string>
+
+    <string name="short_name">‍श्री भगवद् ‍गीता</string>
+    <string name="menu_night_mode">Menu</string>
+    <string name="menu_night_mode_system">Follow system</string>
+    <string name="menu_night_mode_day">Day (always)</string>
+    <string name="menu_night_mode_night">Night (always)</string>
+    <string name="menu_night_mode_auto">Auto</string>
+    <string name="menu_more_apps">More Apps</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="adhyay">अध्याय</string>
+    <string name="shalok">श्लोक</string>
+    <string name="arthath">अर्थात</string>
+    <string name="select_language">Select Language</string>
+    <string name="hindi">Hindi</string>
+    <string name="cancel">Cancel</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="no_bookmark_available">No bookmark available</string>
+    <string name="bookmark_restored">Bookmark restored</string>
+    <string name="bookmark_saved">Bookmark saved</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="like">Like</string>
+    <string name="title_jai_shri_krishana">Jai Shri Krishana</string>
+    <string name="title_radhe_krishana">Radhe Krishana, Radhe Krishana</string>
+    <string name="dot">%s.</string>
+    <string name="loading">Loading...</string>
+    <string name="share_text">🙏 श्रीमद् ‍भगवद् ‍गीता 🙏\n\n%s</string>
+
+    <string name="terms_url">http://geniusumesh.blogspot.in/p/blog-page.html</string>
+    <string name="btn_ok">OK</string>
+    <string name="alert_internet_alert">Internet Alert</string>
+    <string name="alert_no_internet_connection">No internet connection is available.\n\nPlease check network connectivity.</string>
+    <string name="alert_update_App">New App Update</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_online">Ok</string>
+    <string name="check_internet_connection">Your device is currently not connected to the internet.\n\nPlease check you connectivity and click \"OK\" to proceed online or click \"Continue\" to proceed offline</string>
+    <string name="check_internet_alert">Your device is currently not connected to the internet.\n\nPlease check you network connectivity and restart app.</string>
+    <string name="exit_message">Press BACK again to exit</string>
+    <string name="play_store_url">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="play_store_market_url">market://details?id=%s</string>
+    <string name="server_error_occured">Server error occurred</string>
+    <string name="please_check_internet">Please check network connection</string>
+    <string name="syncing_with_server_pls_wait">Syncing with server, please wait...</string>
+    <string name="coming_soon">Coming soon...</string>
+</resources>

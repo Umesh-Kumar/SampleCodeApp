@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/adhyay_1"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 1" />
+        <item
+            android:id="@+id/adhyay_2"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 2" />
+        <item
+            android:id="@+id/adhyay_3"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 3" />
+        <item
+            android:id="@+id/adhyay_4"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 4" />
+        <item
+            android:id="@+id/adhyay_5"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 5" />
+        <item
+            android:id="@+id/adhyay_6"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 6" />
+        <item
+            android:id="@+id/adhyay_7"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 7" />
+        <item
+            android:id="@+id/adhyay_8"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 8" />
+        <item
+            android:id="@+id/adhyay_9"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 9" />
+        <item
+            android:id="@+id/adhyay_10"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 10" />
+        <item
+            android:id="@+id/adhyay_11"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 11" />
+        <item
+            android:id="@+id/adhyay_12"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 12" />
+        <item
+            android:id="@+id/adhyay_13"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 13" />
+        <item
+            android:id="@+id/adhyay_14"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 14" />
+        <item
+            android:id="@+id/adhyay_15"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 15" />
+        <item
+            android:id="@+id/adhyay_16"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 16" />
+        <item
+            android:id="@+id/adhyay_17"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 17" />
+        <item
+            android:id="@+id/adhyay_18"
+            android:icon="@drawable/ic_forum"
+            android:title="अध्याय 18" />
+
+        <item android:title="More">
+            <menu android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_more"
+                    android:icon="@drawable/ic_spiritual"
+                    android:title="Be Spiritual" />
+                <item
+                    android:id="@+id/nav_select_language"
+                    android:icon="@drawable/ic_event"
+                    android:title="Select Language" />
+                <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_event"
+                    android:title="EXIT" />
+            </menu>
+        </item>
+
+    </group>
+
+</menu>
